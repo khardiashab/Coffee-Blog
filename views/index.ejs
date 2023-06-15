@@ -1,0 +1,86 @@
+<section>
+  <!-- home  -->
+  <div class="row flex-lg-row-reverse justify-content-center py-4 mb-4 g-5">
+    <div class="col-12 col-lg-6 justify-content-center">
+      <div class="home__bg my-auto">
+
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <h2 class="display-5 fw-bold mb-3">Huge collection of delicious recipes</h2>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minima aperiam natus quam id. Eius voluptatum vero saepe mollitia, adipisci corrupti dolore, fugiat est nostrum commodi</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-start">
+        <a href="/explore-latest" class="btn btn-lg btn-primary btn-dark px-4 me-md-2">Explore Latest</a>
+        <a href="/explore-random" class="btn btn-lg btn-outline-secondary px-4 me-md-2">Show Random</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- catagory start -->
+<section>
+  <div class="display-6">Catagory</div>
+  <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4">
+
+
+    <% for(let i =0; i<5; i++) { %>
+
+      <a href="/catagory/:id" class="col text-center catagory__link">
+        <div class="catagory__img">
+  
+        </div>
+        <p class="lead">South Indian</p>
+      </a>
+
+      <% } %>
+
+
+    <a href="/catagory" class="col text-center catagory__link">
+      <div class="catagory__img">
+
+      </div>
+      <p class="lead text__underline">view more...</p>
+    </a>
+  </div>
+</section>
+<!-- catagory end -->
+
+<!-- latest dishes -->
+<section>
+  <div class="py-4">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="display-6">Latest Recipes</h2>
+      <a href="/explore-latest" class="lead link-secondary">view more..</a>
+    </div>
+
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 py-4">
+
+      <% for(let i =0; i<5; i++) { %>
+
+      <a href="/recipe/:id" class="col text-center catagory__link">
+        <div class="catagory__img catagory__img__lg">
+  
+        </div>
+        <p class="lead">South Indian</p>
+      </a>
+
+      <% } %>
+      
+
+  </div>
+</section>
+<!-- latest dishes -->
+
+<!-- submit recipe start -->
+<section>
+  <div class="py-4 text-center my-4">
+    <div class="img__box" height="230px">
+      <img src="" alt="submit recipe">
+    </div>
+    <h2>Publish your recipe for Free Today</h2>
+    <p class="lead">Publish your recipe infront of thousands of people.</p>
+    <a href="/submit-recipe" class="btn btn-lg btn-primary btn-dark px-4 my-2">Submit Recipe</a>
+  </div>
+</section>
+<!-- submit recipe end -->
+
